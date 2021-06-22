@@ -1,0 +1,31 @@
+## Step 1. Change null values to 0
+# Select "Cancer" column
+
+# In "Cancer ="
+updateValue(!Cancer!)
+
+# In "Code Block"
+def updateValue(value):
+  if value == None:
+   return '0'
+  else: return value
+
+## Step 2. Populate with 1 or 0 based on focus column
+# Select "Cancer" column
+
+# In "Code Block"
+def classify(focus):
+    if 'Cancer' in focus:
+        return 1
+    elif 'Cancer' not in focus:
+        return 0
+
+# In "Cancer ="
+classify(!focus!)
+
+## Step 3. Replace 1s and 0s with Yes or No
+# Select "Cancer" column
+!Cancer!.replace("1", "Yes")
+!Cancer!.replace("0", "No")
+
+
