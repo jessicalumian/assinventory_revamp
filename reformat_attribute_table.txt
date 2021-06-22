@@ -1,5 +1,8 @@
+## Step 0. Add new column
+# Select "Add +" in attribute table, then fill in a new field with Field Name, Alias, and data type (Text), then right click and save.
+
 ## Step 1. Change null values to 0
-# Select "Cancer" column (change every  instance of "Cancer" to whatever focus is being worked on)
+# Select "Cancer" column (change every  instance of "Cancer" to whatever focus is being worked on). To open, right click and select Calculate Field.
 
 # In "Cancer ="
 updateValue(!Cancer!)
