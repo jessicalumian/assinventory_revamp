@@ -1,5 +1,5 @@
 ## Step 1. Change null values to 0
-# Select "Cancer" column
+# Select "Cancer" column (change every  instance of "Cancer" to whatever focus is being worked on)
 
 # In "Cancer ="
 updateValue(!Cancer!)
