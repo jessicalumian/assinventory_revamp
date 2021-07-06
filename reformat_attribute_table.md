@@ -17,6 +17,8 @@ def updateValue(value):
   else: return value
 ```
 #### Step 2. Populate with 1 or 0 based on focus column
+
+For Focus Column:
 Select "Cancer" column
 
 In "Code Block" for focus columns
@@ -28,6 +30,12 @@ def classify(focus):
         return 0
 ```
 
+In "Cancer ="
+```
+classify(!focus!)
+```
+
+For Type Column:
 In "Code Block" for type columns
 ```
 def classify(type):
@@ -37,9 +45,9 @@ def classify(type):
         return 0
 ```
 
-In "Cancer ="
+In "Advo_Pol_Consult ="
 ```
-classify(!focus!)
+classify(!type!)
 ```
 
 #### Step 3. Replace 1s and 0s with Yes or No
