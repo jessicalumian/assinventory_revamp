@@ -36,18 +36,18 @@ classify(!focus!)
 ```
 
 For Type Column:
-In "Code Block" for type columns
+In "Code Block" for Activity columns
 ```
-def classify(type):
-    if 'Advocacy' in type:
+def classify(activity):
+    if 'Advocacy' in activity:
         return 1
-    elif 'Advocacy' not in type:
+    elif 'Advocacy' not in activity:
         return 0
 ```
 
 In "Advo_Pol_Consult ="
 ```
-classify(!type!)
+classify(!activity!)
 ```
 
 #### Step 3. Replace 1s and 0s with Yes or No
