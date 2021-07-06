@@ -19,12 +19,21 @@ def updateValue(value):
 #### Step 2. Populate with 1 or 0 based on focus column
 Select "Cancer" column
 
-In "Code Block"
+In "Code Block" for focus columns
 ```
 def classify(focus):
     if 'Cancer' in focus:
         return 1
     elif 'Cancer' not in focus:
+        return 0
+```
+
+In "Code Block" for type columns
+```
+def classify(type):
+    if 'Advocacy' in type:
+        return 1
+    elif 'Advocacy' not in type:
         return 0
 ```
 
