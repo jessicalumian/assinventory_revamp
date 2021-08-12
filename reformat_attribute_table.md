@@ -56,3 +56,19 @@ Select "Cancer" column
 !Cancer!.replace("1", "Yes")
 !Cancer!.replace("0", "No")
 ```
+
+#### Step 4. Create Focus_List Column that lists all focuses.
+In "Code Block"
+
+```
+def writeOut(ACEs):
+  if ACEs == 'Yes':
+   return 'ACES, '
+  else: pass
+```
+
+In "All_Focuses" column
+
+```
+writeOut(!ACEs!)
+```
