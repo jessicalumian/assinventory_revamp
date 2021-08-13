@@ -134,7 +134,7 @@ def writeOut(ACEs, Cancer, Cardiovascular, Data_Science, Healthcare_delivery_or_
   final_output = output_string[:-1]
   
   # populate column
-  return output_string
+  return final_output
 ```
 
 In "All_Focuses" column
@@ -187,7 +187,7 @@ def writeOut(Advo_Pol_Consult, Clinical_care, Clinical_research, Direct_support,
   final_output = output_string[:-1]
   
   # populate column
-  return output_string
+  return final_output
 ```
 
 In "All_Focuses" column
