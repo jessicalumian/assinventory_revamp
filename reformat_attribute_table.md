@@ -68,64 +68,64 @@ def writeOut(ACEs, Cancer, Cardiovascular, Data_Science, Healthcare_delivery_or_
   
   # populate list if 'Yes' is present in the category column for each asset  
   if ACEs == 'Yes':
-     output_list.append('ACEs, ')
+     output_list.append('ACEs,')
       
   if Cancer == 'Yes':
-    output_list.append('Cancer, ')
+    output_list.append('Cancer,')
     
   if Cardiovascular == 'Yes':
-    output_list.append('Cardiovascular, ')
+    output_list.append('Cardiovascular,')
     
   if Data_Science == 'Yes':
-    output_list.append('Data Science, ')
+    output_list.append('Data Science,')
     
   if Healthcare_delivery_or_policy == 'Yes':
-    output_list.append('Healthcare Delivery or Policy, ')
+    output_list.append('Healthcare Delivery or Policy,')
     
   if Hematology == 'Yes':
-    output_list.append('Hematology, ')
+    output_list.append('Hematology,')
     
   if Infectious_Disease == 'Yes':
-    output_list.append('Infectious Disease, ')
+    output_list.append('Infectious Disease,')
    
   if Inflammation_and_Immune_Syste == 'Yes':
-    output_list.append('Inflammation and Immune System, ')
+    output_list.append('Inflammation and Immune System,')
     
   if Neurology == 'Yes':
-    output_list.append('Neurology, ')
+    output_list.append('Neurology,')
     
   if Mental_Health == 'Yes':
-    output_list.append('Mental Health, ')
+    output_list.append('Mental Health,')
     
   if Metabolic_and_endocrine == 'Yes':
-    output_list.append('Metabolic and endocrine, ')
+    output_list.append('Metabolic and endocrine,')
     
   if Other == 'Yes':
-    output_list.append('Other, ')
+    output_list.append('Other,')
     
   if Oral_and_Gastrointestinal == 'Yes':
-    output_list.append('Oral and Gastrointestinal, ')
+    output_list.append('Oral and Gastrointestinal,')
     
   if Pediatrics == 'Yes':
-    output_list.append('Pediatrics, ')
+    output_list.append('Pediatrics,')
     
   if Population_Health == 'Yes':
-    output_list.append('Population Health, ')
+    output_list.append('Population Health,')
     
   if Reproductive_urogenital_healt == 'Yes':
-    output_list.append('Reproductive/Urogenital Health, ')
+    output_list.append('Reproductive/Urogenital Health,')
     
   if Respiratory == 'Yes':
-    output_list.append('Respiratory, ')
+    output_list.append('Respiratory,')
     
   if Sequencing == 'Yes':
-    output_list.append('Sequencing, ')
+    output_list.append('Sequencing,')
     
   if Skin == 'Yes':
-    output_list.append('Skin, ')
+    output_list.append('Skin,')
     
   if Tech_pharm_med_devices == 'Yes':
-    output_list.append('Technology, Pharmaceuticals, and Medical Devices, ')
+    output_list.append('Technology, Pharmaceuticals, and Medical Devices,')
     
   # convert list to string, because only text strings can fill new attribute table cells based on "text" data type I set up
   output_string = ' '.join([str(elem) for elem in output_list])
@@ -150,31 +150,31 @@ def writeOut(Advo_Pol_Consult, Clinical_care, Clinical_research, Direct_support,
   
   # populate list if 'Yes' is present in the category column for each asset
   if Advo_Pol_Consult == 'Yes':
-     output_list.append('Advocacy/Policy/Consulting, ')
+     output_list.append('Advocacy/Policy/Consulting,')
       
   if Clinical_care == 'Yes':
-    output_list.append('Clinical Care, ')
+    output_list.append('Clinical Care,')
     
   if Clinical_research == 'Yes':
-    output_list.append('Clinical Research, ')
+    output_list.append('Clinical Research,')
     
   if Direct_support == 'Yes':
-    output_list.append('Direct Support, ')
+    output_list.append('Direct Support,')
     
   if Education_outreach == 'Yes':
-    output_list.append('Education/Outreach, ')
+    output_list.append('Education/Outreach,')
     
   if Other_Activity == 'Yes':
-    output_list.append('Other, ')
+    output_list.append('Other,')
     
   if Research == 'Yes':
-    output_list.append('Research, ')
+    output_list.append('Research,')
    
   if Research_service == 'Yes':
-    output_list.append('Research Service, ')
+    output_list.append('Research Service,')
     
   if Venture_cap == 'Yes':
-    output_list.append('Venture Capitalism/Philanthropy/Granting, ')
+    output_list.append('Venture Capitalism/Philanthropy/Granting,')
   
   # convert list to string, because only text strings can fill new attribute table cells based on "text" data type I set up
   output_string = ' '.join([str(elem) for elem in output_list])
