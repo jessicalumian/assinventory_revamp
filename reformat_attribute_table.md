@@ -63,8 +63,10 @@ In "Code Block"
 ```
 def writeOut(ACEs, Cancer, Cardiovascular, Data_Science, Healthcare_delivery_or_policy, Hematology, Infectious_Disease, Inflammation_and_Immune_Syste, Neurology, Mental_Health, Metabolic_and_endocrine, Other, Oral_and_Gastrointestinal, Pediatrics, Population_Health, Reproductive_urogenital_healt, Respiratory, Sequencing, Skin, Tech_pharm_med_devices):
   
-  # define output list  
+  # define empty output list  
   output_list = []
+  
+  # populate list if 'Yes' is present in the category column for each asset  
   if ACEs == 'Yes':
      output_list.append('ACEs, ')
       
@@ -125,6 +127,7 @@ def writeOut(ACEs, Cancer, Cardiovascular, Data_Science, Healthcare_delivery_or_
   if Tech_pharm_med_devices == 'Yes':
     output_list.append('Technology, Pharmaceuticals, and Medical Devices, ')
     
+  # convert list to string, because only text strings can fill new attribute table cells based on "text" data type I set up
   output_string = ' '.join([str(elem) for elem in output_list])
  
   return output_string
@@ -136,3 +139,51 @@ In "All_Focuses" column
 writeOut(!ACEs!, !Cancer!, !Cardiovascular!, !Data_Science!, !Healthcare_delivery_or_policy!, !Hematology!, !Infectious_Disease!, !Inflammation_and_Immune_Syste!, !Neurology!, !Mental_Health!, !Metabolic_and_endocrine!, !Other!, !Oral_and_Gastrointestinal!, !Pediatrics!, !Population_Health!, !Reproductive_urogenital_healt!, !Respiratory!, !Sequencing!, !Skin!, !Tech_pharm_med_devices!)
 ```
 
+#### Step 5. Create All_Activity column that lists all focuses.
+In "Code Block"
+
+```
+def writeOut(Advo_Pol_Consult, Clinical_care, Clinical_research, Direct_support, Education_outreach, Other_Activity, Research, Research_service, Venture_cap):
+  
+  # define empty output list  
+  output_list = []
+  
+  # populate list if 'Yes' is present in the category column for each asset
+  if Advo_Pol_Consult == 'Yes':
+     output_list.append('Advocacy/Policy/Consulting, ')
+      
+  if Clincial_care == 'Yes':
+    output_list.append('Clinical Care, ')
+    
+  if Clinical_research == 'Yes':
+    output_list.append('Clinical Research, ')
+    
+  if Direct_support == 'Yes':
+    output_list.append('Direct Support, ')
+    
+  if Education_outreach == 'Yes':
+    output_list.append('Education/Outreach, ')
+    
+  if Other_Activity == 'Yes':
+    output_list.append('Other, ')
+    
+  if Research == 'Yes':
+    output_list.append('Research, ')
+   
+  if Research_service == 'Yes':
+    output_list.append('Research Service, ')
+    
+  if Venture_cap == 'Yes':
+    output_list.append('Venture Capitalism/Philanthropy/Granting, ')
+  
+  # convert list to string, because only text strings can fill new attribute table cells based on "text" data type I set up
+  output_string = ' '.join([str(elem) for elem in output_list])
+ 
+  return output_string
+```
+
+In "All_Focuses" column
+
+```
+writeOut(!Advo_Pol_Consult!, !Clinical_care!, !Clinical_research!, !Direct_support!, !Education_outreach!, !Other_Activity!, !Research!, !Research_service!, !Venture_cap!)
+```
