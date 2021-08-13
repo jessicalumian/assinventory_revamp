@@ -61,14 +61,29 @@ Select "Cancer" column
 In "Code Block"
 
 ```
-def writeOut(ACEs):
+def writeOut(ACEs, Cancer):
+  
+  # define output list  
+  output_list = []
   if ACEs == 'Yes':
-   return 'ACES, '
-  else: pass
+     output_list.append('ACEs, ')
+      
+  if Cancer == 'Yes':
+    output_list.append('Cancer, ')
+      
+  output_string = ' '.join([str(elem) for elem in output_list])
+ 
+  return output_string
 ```
 
 In "All_Focuses" column
 
 ```
 writeOut(!ACEs!)
+```
+
+working:
+All_Focuses = 
+```
+writeOut(!ACEs!, !Cancer!)
 ```
