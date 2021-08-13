@@ -130,6 +130,10 @@ def writeOut(ACEs, Cancer, Cardiovascular, Data_Science, Healthcare_delivery_or_
   # convert list to string, because only text strings can fill new attribute table cells based on "text" data type I set up
   output_string = ' '.join([str(elem) for elem in output_list])
  
+  # remove last comma from string
+  final_output = output_string[:-1]
+  
+  # populate column
   return output_string
 ```
 
@@ -178,7 +182,11 @@ def writeOut(Advo_Pol_Consult, Clinical_care, Clinical_research, Direct_support,
   
   # convert list to string, because only text strings can fill new attribute table cells based on "text" data type I set up
   output_string = ' '.join([str(elem) for elem in output_list])
- 
+  
+  # remove last comma from string
+  final_output = output_string[:-1]
+  
+  # populate column
   return output_string
 ```
 
