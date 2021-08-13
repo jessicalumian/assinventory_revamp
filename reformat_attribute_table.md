@@ -152,7 +152,7 @@ def writeOut(Advo_Pol_Consult, Clinical_care, Clinical_research, Direct_support,
   if Advo_Pol_Consult == 'Yes':
      output_list.append('Advocacy/Policy/Consulting, ')
       
-  if Clincial_care == 'Yes':
+  if Clinical_care == 'Yes':
     output_list.append('Clinical Care, ')
     
   if Clinical_research == 'Yes':
