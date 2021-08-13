@@ -79,11 +79,6 @@ def writeOut(ACEs, Cancer):
 In "All_Focuses" column
 
 ```
-writeOut(!ACEs!)
+writeOut(!ACEs!, !Cancer!, !Cardiovascular!, !Data_Science!, !Healthcare_delivery_or_policy!, !Hematology!, !Infectious_Disease!, !Inflammation_and_Immune_Syste!, !Neurology!, !Mental_Health!, !Metabolic_and_endocrine!, !Other!, !Oral_and_Gastrointestinal!, !Pediatrics!, !Population_Health!, !Reproductive_urogenital_healt!, !Respiratory!, !Sequencing!, !Skin!, !Tech_pharm_med_devices!)
 ```
 
-working:
-All_Focuses = 
-```
-writeOut(!ACEs!, !Cancer!)
-```
