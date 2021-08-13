@@ -70,7 +70,61 @@ def writeOut(ACEs, Cancer):
       
   if Cancer == 'Yes':
     output_list.append('Cancer, ')
-      
+    
+  if Cardiovascular == 'Yes':
+    output_list.append('Cardiovascular, ')
+    
+  if Data_Science == 'Yes':
+    output_list.append('Data Science, ')
+    
+  if Healthcare_delivery_or_policy == 'Yes':
+    output_list.append('Healthcare Delivery or Policy, ')
+    
+  if Hematology == 'Yes':
+    output_list.append('Hematology, ')
+    
+  if Infectious_Disease == 'Yes':
+    output_list.append('Infectious Disease, ')
+   
+  if Inflammation_and_Immune_Syste == 'Yes':
+    output_list.append('Inflammation and Immune System, ')
+    
+  if Neurology == 'Yes':
+    output_list.append('Neurology, ')
+    
+  if Mental_Health == 'Yes':
+    output_list.append('Mental Health, ')
+    
+  if Metabolic_and_endocrine == 'Yes':
+    output_list.append('Metabolic and endocrine, ')
+    
+  if Other == 'Yes':
+    output_list.append('Other, ')
+    
+  if Oral_and_Gastrointestinal == 'Yes':
+    output_list.append('Oral and Gastrointestinal, ')
+    
+  if Pediatrics == 'Yes':
+    output_list.append('Pediatrics, ')
+    
+  if Population_Health == 'Yes':
+    output_list.append('Population Health, ')
+    
+  if Reproductive_urogenital_healt == 'Yes':
+    output_list.append('Reproductive/Urogenital Health, ')
+    
+  if Respiratory == 'Yes':
+    output_list.append('Respiratory, ')
+    
+  if Sequencing == 'Yes':
+    output_list.append('Sequencing, ')
+    
+  if Skin == 'Yes':
+    output_list.append('Skin, ')
+    
+  if Tech_pharm_med_devices == 'Yes':
+    output_list.append('Technology, Pharmaceuticals, and Medical Devices, ')
+    
   output_string = ' '.join([str(elem) for elem in output_list])
  
   return output_string
