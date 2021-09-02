@@ -171,11 +171,14 @@ def writeOut(Advo_Pol_Consult, Clinical_care, Clinical_research, Direct_support,
   if Research == 'Yes':
     output_list.append('Research,')
    
-  if Research_service == 'Yes':
-    output_list.append('Research Service,')
+  if Research_tools == 'Yes':
+    output_list.append('Research Tools,')
     
+  if Granting_Philan == 'Yes':
+    output_list.append('Philanthropy/Granting,')
+  
   if Venture_cap == 'Yes':
-    output_list.append('Venture Capitalism/Philanthropy/Granting,')
+    output_list.append('Venture Capitalism,')
   
   # convert list to string, because only text strings can fill new attribute table cells based on "text" data type I set up
   output_string = ' '.join([str(elem) for elem in output_list])
@@ -190,5 +193,5 @@ def writeOut(Advo_Pol_Consult, Clinical_care, Clinical_research, Direct_support,
 In "All_Focuses" column
 
 ```
-writeOut(!Advo_Pol_Consult!, !Clinical_care!, !Clinical_research!, !Direct_support!, !Education_outreach!, !Other_Activity!, !Research!, !Research_service!, !Venture_cap!)
+writeOut(!Advo_Pol_Consult!, !Clinical_care!, !Direct_support!, !Education_outreach!, !Other_Activity!, !Research!, !Research_tools!, !Granting_Philan!, !Venture_cap!)
 ```
