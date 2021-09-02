@@ -160,9 +160,10 @@ def writeOutSkinTech(All_Focuses, Skin, Tech_pharm_med_devices):
     
   if Tech_pharm_med_devices == 'Yes':
     focus_string += 'Technology, Pharmaceuticals, and Medical Devices,'
- 
-  # remove last comma from string
-  final_output = focus_string[:-1]
+  
+  if Skin or Tech_pharm_med_devices == 'Yes':
+    # remove last comma from string
+    final_output = focus_string[:-1]
   
   # populate column
   return final_output
