@@ -143,43 +143,12 @@ In "All_Focus_Final" column
 writeOut(!ACEs!, !Cancer!, !Cardiovascular!, !Data_Science!, !Healthcare_delivery_or_policy!, !Hematology!, !Infectious_Disease!, !Inflammation_and_Immune_Syste!, !Neurology!, !Mental_Health!, !Metabolic_and_endocrine!, !Oral_and_Gastrointestinal!, !Pediatrics!, !Population_Health!, !Reproductive_urogenital_healt!, !Respiratory!, !Sequencing!, !Skin!, !Tech_pharm_med_devices!, !Other!)
 ```
 
-For some annoying reason, the 'Skin' and 'Technology, Pharmaceuticals, and Medical Devices' columns don't fill out when I run the previous function. I suspect that the program is running short on memory, because if I run it with only those two columns, then everything is filled out nicely. Here is another function to tackle those last two categories. The biggest difference is that instead of starting a new list, I will just append the terms to the existing column. **currently does not work**
-
-In "Code Block"
-
-```
-def writeOutSkinTech(All_Focuses, Skin, Tech_pharm_med_devices):
-  
-  # define current contents of All Focuses column  
-  focus_string = str(All_Focuses)
-  
-  # populate list if 'Yes' is present in the category column for each asset  
-  
-  if Skin == 'Yes':
-    focus_string += 'Skin,'
-    
-  if Tech_pharm_med_devices == 'Yes':
-    focus_string += 'Technology, Pharmaceuticals, and Medical Devices,'
-  
-  if Skin or Tech_pharm_med_devices == 'Yes':
-    # remove last comma from string
-    final_output = focus_string[:-1]
-  
-  # populate column
-  return final_output
-```
-
-In "All_Focuses" column
-
-```
-writeOutSkinTech(!All_Focuses!, !Skin!, !Tech_pharm_med_devices!)
-```
 
 #### Step 5. Create All_Activity column that lists all focuses.
 In "Code Block"
 
 ```
-def writeOut(Advo_Pol_Consult, Clinical_care, Clinical_research, Direct_support, Education_outreach, Other_Activity, Research, Research_service, Venture_cap):
+def writeOut(Advo_Pol_Consult, Clinical_care, Direct_support, Education_outreach, Research, Research_tools, Granting_Philan, Venture_cap, Other_Activity):
   
   # define empty output list  
   output_list = []
@@ -197,9 +166,6 @@ def writeOut(Advo_Pol_Consult, Clinical_care, Clinical_research, Direct_support,
   if Education_outreach == 'Yes':
     output_list.append('Education/Outreach,')
     
-  if Other_Activity == 'Yes':
-    output_list.append('Other,')
-    
   if Research == 'Yes':
     output_list.append('Research,')
    
@@ -211,6 +177,9 @@ def writeOut(Advo_Pol_Consult, Clinical_care, Clinical_research, Direct_support,
   
   if Venture_cap == 'Yes':
     output_list.append('Venture Capitalism,')
+    
+  if Other_Activity == 'Yes':
+    output_list.append('Other,')
   
   # convert list to string, because only text strings can fill new attribute table cells based on "text" data type I set up
   output_string = ' '.join([str(elem) for elem in output_list])
@@ -225,5 +194,5 @@ def writeOut(Advo_Pol_Consult, Clinical_care, Clinical_research, Direct_support,
 In "All_Focuses" column
 
 ```
-writeOut(!Advo_Pol_Consult!, !Clinical_care!, !Direct_support!, !Education_outreach!, !Other_Activity!, !Research!, !Research_tools!, !Granting_Philan!, !Venture_cap!)
+writeOut(!Advo_Pol_Consult!, !Clinical_care!, !Direct_support!, !Education_outreach!, !Research!, !Research_tools!, !Granting_Philan!, !Venture_cap!, !Other_Activity!)
 ```
