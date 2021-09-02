@@ -159,9 +159,6 @@ def writeOut(Advo_Pol_Consult, Clinical_care, Clinical_research, Direct_support,
   if Clinical_care == 'Yes':
     output_list.append('Clinical Care,')
     
-  if Clinical_research == 'Yes':
-    output_list.append('Clinical Research,')
-    
   if Direct_support == 'Yes':
     output_list.append('Direct Support,')
     
