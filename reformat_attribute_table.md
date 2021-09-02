@@ -137,13 +137,13 @@ def writeOut(ACEs, Cancer, Cardiovascular, Data_Science, Healthcare_delivery_or_
   return final_output
 ```
 
-In "All_Focuses" column
+In "All_Focus_Final" column
 
 ```
 writeOut(!ACEs!, !Cancer!, !Cardiovascular!, !Data_Science!, !Healthcare_delivery_or_policy!, !Hematology!, !Infectious_Disease!, !Inflammation_and_Immune_Syste!, !Neurology!, !Mental_Health!, !Metabolic_and_endocrine!, !Other!, !Oral_and_Gastrointestinal!, !Pediatrics!, !Population_Health!, !Reproductive_urogenital_healt!, !Respiratory!, !Sequencing!, !Skin!, !Tech_pharm_med_devices!)
 ```
 
-For some annoying reason, the 'Skin' and 'Technology, Pharmaceuticals, and Medical Devices' columns don't fill out when I run the previous function. I suspect that the program is running short on memory, because if I run it with only those two columns, then everything is filled out nicely. Here is another function to tackle those last two categories. The biggest difference is that instead of starting a new list, I will just append the terms to the existing column. 
+For some annoying reason, the 'Skin' and 'Technology, Pharmaceuticals, and Medical Devices' columns don't fill out when I run the previous function. I suspect that the program is running short on memory, because if I run it with only those two columns, then everything is filled out nicely. Here is another function to tackle those last two categories. The biggest difference is that instead of starting a new list, I will just append the terms to the existing column. **currently does not work**
 
 In "Code Block"
 
