@@ -100,9 +100,6 @@ def writeOut(ACEs, Cancer, Cardiovascular, Data_Science, Healthcare_delivery_or_
   if Metabolic_and_endocrine == 'Yes':
     output_list.append('Metabolic and endocrine,')
     
-  if Other == 'Yes':
-    output_list.append('Other,')
-    
   if Oral_and_Gastrointestinal == 'Yes':
     output_list.append('Oral and Gastrointestinal,')
     
@@ -126,6 +123,9 @@ def writeOut(ACEs, Cancer, Cardiovascular, Data_Science, Healthcare_delivery_or_
     
   if Tech_pharm_med_devices == 'Yes':
     output_list.append('Technology, Pharmaceuticals, and Medical Devices,')
+  
+  if Other == 'Yes':
+    output_list.append('Other,')
     
   # convert list to string, because only text strings can fill new attribute table cells based on "text" data type I set up
   output_string = ' '.join([str(elem) for elem in output_list])
@@ -140,7 +140,7 @@ def writeOut(ACEs, Cancer, Cardiovascular, Data_Science, Healthcare_delivery_or_
 In "All_Focus_Final" column
 
 ```
-writeOut(!ACEs!, !Cancer!, !Cardiovascular!, !Data_Science!, !Healthcare_delivery_or_policy!, !Hematology!, !Infectious_Disease!, !Inflammation_and_Immune_Syste!, !Neurology!, !Mental_Health!, !Metabolic_and_endocrine!, !Other!, !Oral_and_Gastrointestinal!, !Pediatrics!, !Population_Health!, !Reproductive_urogenital_healt!, !Respiratory!, !Sequencing!, !Skin!, !Tech_pharm_med_devices!)
+writeOut(!ACEs!, !Cancer!, !Cardiovascular!, !Data_Science!, !Healthcare_delivery_or_policy!, !Hematology!, !Infectious_Disease!, !Inflammation_and_Immune_Syste!, !Neurology!, !Mental_Health!, !Metabolic_and_endocrine!, !Oral_and_Gastrointestinal!, !Pediatrics!, !Population_Health!, !Reproductive_urogenital_healt!, !Respiratory!, !Sequencing!, !Skin!, !Tech_pharm_med_devices!, !Other!)
 ```
 
 For some annoying reason, the 'Skin' and 'Technology, Pharmaceuticals, and Medical Devices' columns don't fill out when I run the previous function. I suspect that the program is running short on memory, because if I run it with only those two columns, then everything is filled out nicely. Here is another function to tackle those last two categories. The biggest difference is that instead of starting a new list, I will just append the terms to the existing column. **currently does not work**
